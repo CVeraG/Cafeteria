@@ -6,7 +6,8 @@
         <link href="img/logo.png" rel="icon">
         <link href="Css/index.css" rel="stylesheet">
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
-
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <script src="app.js" async></script>
     </head>
 
     <body>
@@ -29,12 +30,46 @@
                         </div>
                         <div class="numobjetos">
                             <h4>Tienes objetos en el carrito</h4>
-                        </div>         
-            </div>
-                </div>
-               
-            </div>   
-            <!--Detalles de entrega-->     
+                        </div> 
+                        <section class="contenedor">
+                            <!--Contenedor del menu-->
+                            <div class="items">
+                                <img src="img/cafe.jpg" alt="capuccino" class="item-img">
+                                <span class="nombre-item">Capuccino</span>
+                                <span class="precio-item">$25</span>
+                                <div class="selector-cantidad">
+                                    <i class="fa-solid fa-plus sumar-cantidad" onclick="sumarCantidad(this)"></i>
+                                    <input type="text" value="1" class="item-cantidad" disabled>
+                                    <i class="fa-solid fa-minus restar-cantidad"></i>
+                                </div>
+                                
+
+                            </div>
+                            <div class="items">
+                                <img src="img/emperador.png" alt="Galletas" class="item-img">
+                                <span class="nombre-item">Galletas emperador</span>
+                                <span class="precio-item">$18</span>
+                                <div class="selector-cantidad">
+                                    <i class="fa-solid fa-plus sumar-cantidad" onclick="sumarCantidad(this)"></i>
+                                    <input type="text" value="1" class="item-cantidad" disabled>
+                                    <i class="fa-solid fa-minus restar-cantidad"></i>
+                                </div>
+                            </div>
+                            <div class="items">
+                                <img src="img/sandwich.jpg" alt="sandwich" class="item-img">
+                                <span class="nombre-item">Sandwich</span>
+                                <span class="precio-item">$35</span>
+                                <div class="selector-cantidad">
+                                    <i class="fa-solid fa-plus sumar-cantidad" onclick="sumarCantidad(this)"></i>
+                                    <input type="text" value="1" class="item-cantidad" disabled>
+                                    <i class="fa-solid fa-minus restar-cantidad"></i>
+                                </div>
+                            </div>
+                        </section>
+                            </div>
+                        </div>        
+                    </div>
+               <!--Detalles de entrega-->     
             <div class="direccion">
                 <h2>Detalles de entrega</h2>
                 <form action="procesar.php" method="post">
@@ -103,6 +138,7 @@
                     </div>
                         
                 </div>
+                </form>
             </div>
-        </div>        
+        </div>                    
     </body>

@@ -8,9 +8,9 @@ body {
     background: #FFF;}
 
 .principal{
-        display : flex;
+        display : inline-flex;
         flex-direction : row;
-        width: 70.8125rem;
+        width: 85.8125rem;
         height: 46.5rem;
         background-color: #FFF;
     }
@@ -54,6 +54,77 @@ body {
     flex-shrink: 0;
     background: #FFF;
 }
+
+.contenedor{
+    display: flex;
+    flex-direction: column;
+    width: 47.19513rem;
+    height: 40.20069rem;
+    flex-shrink: 0;
+    contain: paint;
+}
+.contenedor .items{
+    display: flex;
+    width: 48.19513rem;
+    height: 8.20069rem;
+    flex-shrink: 0;
+    border-radius: 0.9375rem;
+    background: #FFF;
+    box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.25);
+    margin-bottom: 2rem;
+}
+.contenedor .items .item-img{
+    width: 6.34144rem;
+    height: 6.748rem;
+    flex-shrink: 0;
+    border-radius: 0.5rem;
+    background: lightgray 50% / cover no-repeat, #D9D9D9;;
+}
+
+.contenedor .items .nombre-item{
+    display: flex;
+    width: 15.061rem;
+    height: 2.21419rem;
+    flex-shrink: 0;
+    color: #1E1E1E;
+    font-family: Poppins;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-top: 2.05rem;
+    margin-left: 1.43rem;
+}
+
+.contenedor .items .precio-item{
+    display: flex;
+    width: 0.95125rem;
+    height: 1.64013rem;
+    flex-shrink: 0;
+    color: #393939;
+    font-variant-numeric: lining-nums proportional-nums;
+    font-family: Raleway;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 100%; /* 1.5rem */
+    margin-top: 3.25rem;
+    margin-left: 5rem;
+}
+
+.contenedor .items .boton-item{
+    display: block;
+    border: none;
+    width: 6rem;
+    height: 2.375rem;
+    flex-shrink: 0;
+    border-radius: 1.25rem;
+    background: #565ABB;
+    cursor: pointer;
+    align-items: flex-end;
+    margin-top: 3rem;
+}
+
 .numobjetos{
     width: 17.04269rem;
     height: 1.55813rem;
@@ -62,7 +133,7 @@ body {
 
 }
 .direccion{
-    display: block;
+    display: flexbox;
     width: 24.25rem;
     height: 40.25rem;
     padding: 1rem 1rem 1rem 1rem;
@@ -287,21 +358,6 @@ line-height: normal;
     font-weight: 500;
 
 }
-.ordenar input{
-    display: flex;
-    align-items:center;
-    width: 3.63rem;
-    height: 1.5rem;
-    border-radius: 0.375rem;
-    background: #4DE1C1;
-    border: none;
-    color: #FEFCFC;
-    font-family: Poppins;
-    font-size: 1rem;
-    font-style: normal;
-    font-weight: 500;
-
-}
 .ordenar input:hover{
     cursor: pointer;
 }
@@ -331,6 +387,41 @@ line-height: normal;
     background: #4DE1C1 50% / 
     contain no-repeat;
 
+}
+
+.contenedor .items .selector-cantidad{
+    display: flex;
+    border: none;
+    width: 6rem;
+    height: 2.375rem;
+    flex-shrink: 0;
+    border-radius: 1.25rem;
+    background: #FFF;
+    cursor: pointer;
+    align-items: center;
+    margin-left: 10rem;
+    margin-top: 2.35rem;
+    
+}
+.contenedor .items .selector-cantidad i{
+    width: 1rem;
+    text-align: center;
+    align-items: center;
+
+
+}
+.contenedor .items .selector-cantidad input{
+    background: none;
+    border: #1E1E1E;
+    text-align: center;
+    width: 2rem;
+    color: #393939;
+    font-variant-numeric: lining-nums proportional-nums;
+    font-family: Raleway;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 100%; /* 1.5rem */
 }
 
 
