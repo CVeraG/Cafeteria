@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Cafeteria</title>
+        <link href="img/logo.png" rel="icon">
+        <link href="Css/index.css" rel="stylesheet">
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    </head>
+
+    <body>
+        <!--Pagina principal-->
+        <div class="principal">
+            <div class="pedido">
+                <!--Encabezado-->
+                <div class="encabezado">
+                    <div class="salidaimg"></div>
+                    <div class="salida">
+                        <h2>Pedido</h2>
+                    </div>
+                </div>
+                <hr>
+                <!--Menu-->
+                <div class="centro">
+                    <div class="menu">
+                        <div>
+                            <h3>Menu</h3>
+                        </div>
+                        <div class="numobjetos">
+                            <h4>Tienes objetos en el carrito</h4>
+                        </div>         
+            </div>
+                </div>
+               
+            </div>   
+            <!--Detalles de entrega-->     
+            <div class="direccion">
+                <h2>Detalles de entrega</h2>
+                <form action="procesar.php" method="post">
+                    <div class="nombre">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Nombre"required>
+                    </div>
+                    
+                    <div class="edificio">
+                        <label for="edificio">Edificio</label>
+                        <input type="text" id="edificio" name="edificio" placeholder="ESCOM, edificio de gobierno" required>
+                        
+                    </div>
+                    <div class="direccion2">
+                        <div class="piso">
+                            <label for="piso">Piso</label>
+                            <input type="text" id="piso" name="piso" placeholder="3" required>
+                        
+                        </div>
+                        <div class="salon">
+                            <label for="salon">salon</label>
+                            <input type="text" id="salon" name="salon" placeholder="1213" required>  
+                        </div>
+                    </div>
+                    <div class="instrucciones">
+                        <label for="instrucciones">Agregar intrucciones de entrega</label>
+                        <input type="text" id="instrucciones" name="instrucciones" placeholder="Instrucciones">
+                    
+                </div>
+                <hr>
+                <div class="costos">
+                    <div class="subtotal">                    
+                        <div class="texto">
+                            <h4>Subtotal</h4>
+                        </div>
+                        <div class="precio"> 
+                            <h4>$$$$</h4>
+                        </div>
+                    </div>
+                    <div class="envio">                    
+                        <div class="texto">
+                            <h4>Envio</h4>
+                        </div>
+                        <div class="precio"> 
+                            <h4>$$$$</h4>
+                        </div>
+                    </div>
+                    <div class="total">                    
+                        <div class="texto">
+                            <h4>Total</h4>
+                        </div>
+                        <div class="precio"> 
+                            <h4>$$$$</h4>
+                        </div>
+                        </div>
+                    <div class="pago">
+                        <div class="preciofin">
+                            <h4>$$$$</h4>
+                        </div>
+                        <div class="ordenar">
+                            <input type="submit" value="Ordenar">
+                        </div>
+                        <div class="imgordenar">
+                            <input type="image" src="img/Right.png" name="Ordenar">
+                        </div>
+                    </div>
+                        
+                </div>
+            </div>
+        </div>        
+    </body>

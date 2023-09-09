@@ -1,0 +1,338 @@
+body {
+    font-size: 16px;
+    width: 50vw;
+    height: 30vh;
+    padding: 2.5625rem 2.75rem 2.625rem 2.75rem;
+    justify-content: center;
+    align-items: center;
+    background: #FFF;}
+
+.principal{
+        display : flex;
+        flex-direction : row;
+        width: 70.8125rem;
+        height: 46.5rem;
+        background-color: #FFF;
+    }
+.pedido{
+    display: block;
+    width: 48.19513rem;
+    height: 46.5rem;
+    flex-shrink: 0;
+    background: #FFF;
+}
+
+.encabezado{
+    display : flex;
+    flex-direction : row;
+
+}
+.salidaimg{
+       
+    background: url('../img/arrow.png') no-repeat center center;
+    width: 2.46019rem;
+    height: 2.37806rem;
+    flex-shrink: 0;
+    }
+
+.salida{
+    display: flex;
+    width: 15.061rem;
+    height: 2.21419rem;
+    flex-shrink: 0;
+    align-items: center;
+}
+
+.centro{
+    display : flex;
+    flex-direction : row;
+}
+.menu{
+    display: block;
+    width: 50.19513rem;
+    height: 45rem;
+    flex-shrink: 0;
+    background: #FFF;
+}
+.numobjetos{
+    width: 17.04269rem;
+    height: 1.55813rem;
+    flex-shrink: 0;
+    clear: both;
+
+}
+.direccion{
+    display: block;
+    width: 24.25rem;
+    height: 40.25rem;
+    padding: 1rem 1rem 1rem 1rem;
+    flex-shrink: 0;
+    border-radius: 1.25rem;
+    background: #565ABB;
+    margin-left: 3.44rem;
+}
+.direccion h2{
+    width: 14.75rem;
+    color: #FEFCFC;
+    font-family: Poppins;
+    font-size: 1.375rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+h2{
+font-family: Poppins;
+font-size: 1.5rem;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+
+}
+h3{
+    font-family: Poppins;
+font-size: 1.5rem;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+h4{
+    color: #1E1E1E;
+    font-family: Nunito;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.direccion label{
+    color: #FEFCFC;
+    font-family: Poppins;
+    font-size: 0.9rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.direccion input{
+    margin-top: 0.75rem ;
+    display: block;
+    border-radius: 0.375rem;
+    background: #6268C6;
+    border: none
+}
+hr{
+    width: 48.19513rem;
+    height: 0.09375rem;
+    background: #D0CFCF;
+    border: none;
+}
+#nombre{
+    width: 21.875rem;
+    height: 2.5rem;
+    flex-shrink: 0;
+}
+#edificio{
+    width: 21.875rem;
+    height: 2.5rem;
+    flex-shrink: 0;
+}
+input{
+    width: 10.1875rem;
+    color: #C4C4C4;
+    font-family: Poppins;
+    font-size: 0.85rem;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+::placeholder{
+width: 10.1875rem;
+color: #C4C4C4;
+font-family: Poppins;
+font-size: 0.85rem;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+.nombre{
+    margin-bottom: 2rem;
+}
+.direccion2{
+    margin-top: 0.69rem;
+    display : flex;
+    flex-direction : row;
+}
+#piso{
+    margin-right: 3.25rem;
+    width: 8.625rem;
+    height: 2.5rem;
+    flex-shrink: 0;
+}
+#salon{
+    width: 8.625rem;
+    height: 2.5rem;
+    flex-shrink: 0;
+}
+.instrucciones{
+    margin-top: 2rem;
+}
+#instrucciones{
+    width: 21.875rem;
+    height: 2.5rem;
+    flex-shrink: 0;
+}
+.direccion hr{
+    margin-top: 2.34rem;
+    width: 21.87506rem;
+    height: 0.0625rem;
+    background: #5F65C3;;
+    border: none;
+}
+
+.direccion h4{
+    color: #FEFCFC;
+    font-family: Poppins;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.subtotal{
+    width: 21.87rem;
+    height: 1.3125rem;
+    margin-top: 0.38rem;
+    display : flex;
+    flex-direction : row;
+}
+.envio{
+    width: 21.87rem;
+    height: 1.3125rem;
+    margin-top: 0.1rem;
+    display : flex;
+    flex-direction : row;
+}
+.total{
+    width: 21.87rem;
+    height: 1.3125rem;
+    margin-top: 0.1rem;
+    display : flex;
+    flex-direction : row;
+}
+.costos h4{
+    margin-top: 0.94;
+    color: #FEFCFC;
+    font-family: Poppins;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+
+}
+.precio{
+    width: 8.625rem;
+}
+.precio h4{
+    color: #FEFCFC;
+    text-align: right;
+    font-family: Poppins;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.texto{
+    width: 8.625rem;
+    margin-right: 4.62rem;
+}
+.pago{
+    display : flex;
+    flex-direction : row;
+    margin-top: 1.63rem;
+    width: 21.875rem;
+    height: 3.75rem;
+    flex-shrink: 0;
+    border-radius: 0.75rem;
+    background: #4DE1C1;
+    align-items: center;
+    align-content: center;
+    line-height: normal;
+    padding-left: 1.5rem;
+}
+.preciofin{
+    display: flex;
+    align-items: center; 
+    width: 8.625rem;
+    height: 1.5rem;
+}
+.ordenar{
+    display: flex;
+    align-items:flex-end;
+    margin-left: 5.63rem;
+    width: 3.63rem;
+    height: 1.5rem;
+    flex-shrink: 0;
+}
+
+.ordenar input{
+    display: flex;
+    align-items:center;
+    width: 3.63rem;
+    height: 1.5rem;
+    border-radius: 0.375rem;
+    background: #4DE1C1;
+    border: none;
+    color: #FEFCFC;
+    font-family: Poppins;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+
+}
+.ordenar input{
+    display: flex;
+    align-items:center;
+    width: 3.63rem;
+    height: 1.5rem;
+    border-radius: 0.375rem;
+    background: #4DE1C1;
+    border: none;
+    color: #FEFCFC;
+    font-family: Poppins;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+
+}
+.ordenar input:hover{
+    cursor: pointer;
+}
+.pago h4{
+    
+    color: #FEFCFC;
+    font-family: Poppins;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+
+}
+
+.imgordenar{
+    display: flex;
+    align-items:flex-end;
+    width: 1.5625rem;
+    height: 1.5625rem;
+    flex-shrink: 0;
+}
+.imgordenar input{
+    
+    margin-left: 0.5rem;
+    width: 1.5625rem;
+    height: 1.5625rem;
+    flex-shrink: 0;
+    background: #4DE1C1 50% / 
+    contain no-repeat;
+
+}
+
+
+
+
