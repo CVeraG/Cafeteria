@@ -12,9 +12,8 @@ $conexion = mysqli_connect($host, $usuario, $contrasena, $base_datos);
 if ($conexion->connect_error) {
     die("Error en la conexión: " .$conexion->connect_error);
 }
-
 insertar_direccion($conexion);
-
+//Insertar en la base los datos de direccion
 function insertar_direccion($conexion){
     $rnombre =$_POST['dnombre'];
     $redificio =$_POST['dedificio'];
@@ -25,13 +24,12 @@ function insertar_direccion($conexion){
     $consulta = "INSERT INTO direccion(Nombre,Edificio,Piso,Salon,Instrucciones) 
     VALUES ('$rnombre', '$redificio', '$rpiso', '$rsalon', '$rinstrucciones')";
 
+    
     mysqli_query($conexion,$consulta);
     mysqli_close($conexion);
     
 }
-// Datos de dirección de entrega
 
-
-// Insertar datos de dirección de entrega en la tabla de Dirección de Entrega
+?>
 
 
