@@ -36,11 +36,11 @@
                             <div class="items">
                                 <img src="img/cafe.jpg" alt="capuccino" class="item-img">
                                 <span class="nombre-item">Capuccino</span>
-                                <span class="precio-item">$25</span>
+                                <span class="precio-item" data-precio="25">$25</span>
                                 <div class="selector-cantidad">
-                                    <i class="fa-solid fa-plus sumar-cantidad" onclick="sumarCantidad(this)"></i>
-                                    <input type="text" value="1" class="item-cantidad" disabled>
-                                    <i class="fa-solid fa-minus restar-cantidad"></i>
+                                    <i class="fa-solid fa-plus sumar-cantidad" onclick="modificarCantidad(this)" data-value="incrementar"></i>
+                                    <h3 class="valor-item" value = "">0</h3>
+                                    <i class="fa-solid fa-minus restar-cantidad" onclick="modificarCantidad(this)" data-value="disminuir"></i>
                                 </div>
                                 
 
@@ -48,21 +48,21 @@
                             <div class="items">
                                 <img src="img/emperador.png" alt="Galletas" class="item-img">
                                 <span class="nombre-item">Galletas emperador</span>
-                                <span class="precio-item">$18</span>
+                                <span class="precio-item" data-precio="18">$18</span>
                                 <div class="selector-cantidad">
-                                    <i class="fa-solid fa-plus sumar-cantidad" onclick="sumarCantidad(this)"></i>
-                                    <input type="text" value="1" class="item-cantidad" disabled>
-                                    <i class="fa-solid fa-minus restar-cantidad"></i>
+                                    <i class="fa-solid fa-plus sumar-cantidad" onclick="modificarCantidad(this)" data-value="incrementar"></i>
+                                    <h3 class="valor-item" value = "">0</h3>
+                                    <i class="fa-solid fa-minus restar-cantidad" onclick="modificarCantidad(this)" data-value="disminuir"></i>
                                 </div>
                             </div>
                             <div class="items">
                                 <img src="img/sandwich.jpg" alt="sandwich" class="item-img">
                                 <span class="nombre-item">Sandwich</span>
-                                <span class="precio-item">$35</span>
+                                <span class="precio-item" data-precio="35">$35</span>
                                 <div class="selector-cantidad">
-                                    <i class="fa-solid fa-plus sumar-cantidad" onclick="sumarCantidad(this)"></i>
-                                    <input type="text" value="1" class="item-cantidad" disabled>
-                                    <i class="fa-solid fa-minus restar-cantidad"></i>
+                                    <i class="fa-solid fa-plus sumar-cantidad" onclick="modificarCantidad(this)" data-value="incrementar"></i>
+                                    <h3 class="valor-item" value = "">0</h3>
+                                    <i class="fa-solid fa-minus restar-cantidad" onclick="modificarCantidad(this)" data-value="disminuir"></i>
                                 </div>
                             </div>
                         </section>

@@ -1,29 +1,47 @@
+// Obtener todos los botones de restar y sumar
+var botonesRestar = document.querySelectorAll('.restar-cantidad');
+var botonesSumar = document.querySelectorAll('.sumar-cantidad');
+var precioTotal = 0;
 
-//Esperar que la pagina cargue
-if(document.readyState=="loading"){
-    document.addEventListener('DOMContentLoaded',ready)
-}
-else{ready();}
+// Agregar controladores de eventos a los botones de restar
+botonesRestar.forEach(function (botonRestar) {
+    botonRestar.addEventListener('click', function () {
+        modificarCantidad(this, 'disminuir');
+    });
+});
 
-function ready(){
-    //Agregar funcionalidad al boton mas
-    var botonesSumarCantidad = document.getElementsByClassName('sumar-cantidad');
-    for(var i=0;i<botonesSumarCantidad.length; i++){
-        var button = botonesSumarCantidad[i];
-        button.addEventListener('click',sumarCantidad);
+// Agregar controladores de eventos a los botones de sumar
+botonesSumar.forEach(function (botonSumar) {
+    botonSumar.addEventListener('click', function () {
+        modificarCantidad(this, 'incrementar');
+    });
+});
+
+function modificarCantidad(boton, operacion) {
+    // Obtener el div padre del botón actual
+    var divItem = boton.closest('.items');    
+    var h4ValorItem = divItem.querySelector('.valor-item');
+    var precioItem = divItem.querySelector('.precio-item');
+    // Obtener el valor actual
+    var valorActual = parseInt(h4ValorItem.textContent);
+    var precioItemActual = parseInt(precioItem.getAttribute('data-precio'));
+
+    // Realizar la operación correspondiente
+    if (operacion === 'incrementar') {
+        valorActual++;
+        precioTotal += precioItemActual;
+
+    } else if (operacion === 'disminuir' && valorActual > 0) {
+        valorActual--;
+        precioTotal -= precioItemActual;
+
     }
-    //Agregar funcionalidad al boton menos
-    var botonesSumarCantidad = document.getElementsByClassName('restar-cantidad');
-    for(var i=0;i<botonesRestarCantidad.length; i++){
-        var button = botonesRestarCantidad[i];
-        button.addEventListener('click',restarCantidad);
-    }
-}
 
-function sumarCantidad(event){
-    var selector = buttonClicked.parentElement.parentElement; // Accede al contenedor del elemento
-    var cantidadActual = parseInt(selector.querySelector('.item-cantidad').value); // Obtén el valor actual y conviértelo a número entero
-    cantidadActual++;
-    selector.querySelector('.item-cantidad').value = cantidadActual; // Actualiza el valor del elemento de entrada
-    actualizarTotalCarrito();
+    
+
+    // Actualizar el valor en el html
+    h4ValorItem.textContent = valorActual;
+    console.log(valorActual);
+    console.log('Precio total: $' + precioTotal);
+
 }
