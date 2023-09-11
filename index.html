@@ -7,12 +7,13 @@
         <link href="Css/index.css" rel="stylesheet">
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="index.css">
         <script src="app.js" async></script>
     </head>
 
     <body>
         <!--Pagina principal-->
-        <div class="principal">
+        <main>
             <div class="pedido">
                 <!--Encabezado-->
                 <div class="encabezado">
@@ -42,9 +43,7 @@
                                     <h3 class="valor-item" value = "">0</h3>
                                     <i class="fa-solid fa-minus restar-cantidad" onclick="modificarCantidad(this)" data-value="disminuir"></i>
                                 </div>
-                                
-
-                            </div>
+                            </div><!--cierre item-->
                             <div class="items">
                                 <img src="img/emperador.png" alt="Galletas" class="item-img">
                                 <span class="nombre-item">Galletas emperador</span>
@@ -54,7 +53,7 @@
                                     <h3 class="valor-item" value = "">0</h3>
                                     <i class="fa-solid fa-minus restar-cantidad" onclick="modificarCantidad(this)" data-value="disminuir"></i>
                                 </div>
-                            </div>
+                            </div><!--cierre item-->
                             <div class="items">
                                 <img src="img/sandwich.jpg" alt="sandwich" class="item-img">
                                 <span class="nombre-item">Sandwich</span>
@@ -64,12 +63,44 @@
                                     <h3 class="valor-item" value = "">0</h3>
                                     <i class="fa-solid fa-minus restar-cantidad" onclick="modificarCantidad(this)" data-value="disminuir"></i>
                                 </div>
-                            </div>
-                        </section>
-                            </div>
-                        </div>        
-                    </div>
-               <!--Detalles de entrega-->     
+                            </div><!--cierre item-->
+                            <div class="items">
+                                <img src="img/sabritas.jpg" alt="sabritas" class="item-img">
+                                <span class="nombre-item">Sabritas</span>
+                                <span class="precio-item" data-precio="18">$18</span>
+                                <div class="selector-cantidad">
+                                    <i class="fa-solid fa-plus sumar-cantidad" onclick="modificarCantidad(this)" data-value="incrementar"></i>
+                                    <h3 class="valor-item" value = "">0</h3>
+                                    <i class="fa-solid fa-minus restar-cantidad" onclick="modificarCantidad(this)" data-value="disminuir"></i>
+                                </div>
+                            </div><!--cierre item-->
+                            <div class="items">
+                                <img src="img/boing.jpg" alt="boing" class="item-img">
+                                <span class="nombre-item">Boing</span>
+                                <span class="precio-item" data-precio="20">$20</span>
+                                <div class="selector-cantidad">
+                                    <i class="fa-solid fa-plus sumar-cantidad" onclick="modificarCantidad(this)" data-value="incrementar"></i>
+                                    <h3 class="valor-item" value = "">0</h3>
+                                    <i class="fa-solid fa-minus restar-cantidad" onclick="modificarCantidad(this)" data-value="disminuir"></i>
+                                </div>
+                            </div><!--cierre item-->
+                            <div class="items">
+                                <img src="img/maruchan.jpg" alt="maruchan" class="item-img">
+                                <span class="nombre-item">Maruchan</span>
+                                <span class="precio-item" data-precio="24">$24</span>
+                                <div class="selector-cantidad">
+                                    <i class="fa-solid fa-plus sumar-cantidad" onclick="modificarCantidad(this)" data-value="incrementar"></i>
+                                    <h3 class="valor-item" value = "">0</h3>
+                                    <i class="fa-solid fa-minus restar-cantidad" onclick="modificarCantidad(this)" data-value="disminuir"></i>
+                                </div>
+                            </div><!--cierre item-->
+                            
+                            
+                        </section><!--cierre contenedor-->
+                    </div><!--cierre menú-->
+                </div><!--cierre centro-->        
+            </div><!--cierre pedido-->
+            <!--Detalles de entrega-->     
             <div class="direccion">
                 <h2>Detalles de entrega</h2>
                 <form action="conexion.php" method="post">
@@ -124,6 +155,6 @@
                 </div>
                 </form>
             </div>
-        </div>                    
+        </main>                    
     </body>
 </html>
