@@ -33,7 +33,7 @@ Previo a la ejecución deberá de importar la base de datos y de ser necesario c
 
 ###Instrucciones de compilación y ejecución
 1. Teniendo ya instalado XAMPP e importada la base de datos, se deberá de colocar la carpeta del proyecto dentro de la carpeta "htdocs" de XAMPP.
-2. En tu navegador web deberás colocar la siguiente url: **localhost/nombre_carpeta_proyecto/index.html** Deberás sustituir "nombre_carpeta_proyecto" por el nombre de la carpeta que contenga tu proyecto. 
+2. En tu navegador web coloca la siguiente url: **localhost/nombre_carpeta_proyecto/index.html** sustituyendo "nombre_carpeta_proyecto" por el nombre que le asignaste a la carpeta del proyecto.
 
 ------------
 
