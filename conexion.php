@@ -31,5 +31,3 @@ function insertar_direccion($conexion){
 }
 
 ?>
-
-
