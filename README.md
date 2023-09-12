@@ -12,7 +12,7 @@ Primer proyecto del semestre 24/1 para la materia de Desarrollo de Aplicaciones 
 
 ### Descripción del proyecto
 Este proyecto nace con el objetivo de desarrollar y poner en funcionamiento una página web para el registro de pedidos de la cafetería del CIC (Centro de Investigación en Computación) y ESCOM (Escuela Superior de Cómputo) que simplifique el proceso de pedidos y entregas de alimentos, brindando a los usuarios una experiencia de compra eficiente y mejorando la satisfacción del cliente en el entorno universitario.
-#####Tecnologías
+##### Tecnologías
 Para la implementación de este proyecto se hizo uso de:
 - HTML5
 - CSS3
@@ -31,14 +31,14 @@ Previo a la ejecución deberá de importar la base de datos y de ser necesario c
 ------------
 
 
-###Instrucciones de compilación y ejecución
+### Instrucciones de compilación y ejecución
 1. Teniendo ya instalado XAMPP e importada la base de datos, se deberá de colocar la carpeta del proyecto dentro de la carpeta "htdocs" de XAMPP.
 2. En tu navegador web coloca la siguiente url: **localhost/nombre_carpeta_proyecto/index.html** sustituyendo "nombre_carpeta_proyecto" por el nombre que le asignaste a la carpeta del proyecto.
 
 ------------
 
 
-####¡Ya puedes hacer uso de este proyecto!
+#### ¡Ya puedes hacer uso de este proyecto!
 
 ------------
 
