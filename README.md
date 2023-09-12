@@ -42,5 +42,9 @@ Previo a la ejecución deberá de importar la base de datos y de ser necesario c
 
 ------------
 
+### Creado con ❤️ y ☕ por Christopher y Carol (Septiembre 2023) 
+
+------------
+
 
 
